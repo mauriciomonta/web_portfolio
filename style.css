@@ -28,7 +28,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .nav__links,
