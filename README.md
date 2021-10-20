@@ -2,7 +2,8 @@
 
 # Portfolio created with HTML, CSS & JS.
 
-> This project was developed for mobile copying Figma Template.
+> This project was developed for mobile copying Figma Template #3.
+> 
 ![Index](https://i.imgur.com/GtiRL1f.png)
 ![NavBar](https://imgur.com/r6q0hTd.png)
 
