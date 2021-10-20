@@ -5,8 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mauricio J. Monta</title>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--fonts-->
+
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
-  <body></body>
+  <body>
+    <!--toolbar-->
+    <header>
+      <div id="toolbar" class="toolbar">
+        <h2 id="toolbartitle">Welcome</h2>
+      </div>
+      <nav>
+        <button id="hamBtn">
+          <img src="img/menu.png" height="20px" alt="hamburger" />
+        </button>
+      </nav>
+    </header>
+    <div class="links">
+      <button id="hamBtnClose">X</button>
+      <ul class="nav__links">
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <!--toolbar-->
+
+    <!--headline-->
+    <div id="bgheadline">
+      <div class="headline">
+        <h1 id="headlinetitle">
+          Hey there. I'm Mauricio
+          <br />
+          <span id="subtitle">I'm a software developer</span>
+        </h1>
+        <p id="headlineparagraph">
+          I can help you build a product, feature or website Look through some
+          of my work and experience! <br />
+          If you like what you see and have a project you need coded, <br />
+          don’t hestiate to contact me.
+        </p>
+      </div>
+
+      <div id="socialmediabtns">
+        <a href="#"
+          ><img src="img/github.png" height="25px" alt="GitHub Logo"
+        /></a>
+        <a href="#"
+          ><img src="img/twitter.png" height="25px" alt="Twitter Logo"
+        /></a>
+        <a href="#"
+          ><img src="img/instagram.png" height="25px" alt="Instagram Logo"
+        /></a>
+      </div>
+    </div>
+    <div id="scrolldownbtn">
+      <a href="#"><img src="img/down.png" height="20px" alt="scrolldown" /></a>
+    </div>
+    <!--headline-->
+
+    <!--scripts-->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <!--scripts-->
+  </body>
 </html>
