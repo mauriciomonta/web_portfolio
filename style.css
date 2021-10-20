@@ -36,10 +36,6 @@ li {
   text-align: start;
 }
 
-a:hover {
-  color: #36b37e;
-}
-
 .links {
   padding: 30px 0 50px 30px;
   display: none;
@@ -102,6 +98,10 @@ a:hover {
 #socialmediabtns,
 a {
   margin: 0 20px;
+}
+
+a:hover {
+  color: #36b37e;
 }
 
 #scrolldownbtn {
