@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio created with HTML, CSS & jQuery.
+# Portfolio created with HTML, CSS & JS.
 
 > This project was developed for mobile using Figma Template #3.
 ![Index](https://i.imgur.com/GtiRL1f.png)
