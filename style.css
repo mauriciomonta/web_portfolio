@@ -90,12 +90,15 @@ ul.nav__links {
   color: #36b37e;
 }
 
-#headlineparagraph {
+.paragraph {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 17px;
   color: #172b4d;
-  padding: 0 24px;
+}
+
+.centered {
+  margin: 0 600px;
 }
 
 .headline {
@@ -110,7 +113,7 @@ ul.nav__links {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 0 0 0;
 }
 
 #socialmediabtns,
@@ -125,7 +128,6 @@ a:hover {
 #scrolldownbtn {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
 }
 
 #bgheadline {
@@ -193,4 +195,260 @@ a:hover {
   left: 35%;
   top: 64.5%;
   opacity: 70%;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+#portfoliosection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#aboutmesection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#separator {
+  background-color: #36b37e;
+  height: 4px;
+  width: 15%;
+  border: 1px solid #36b37e;
+  border-radius: 20px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 475px);
+  gap: 30px;
+  margin: 60px 16px;
+}
+
+.wrapper2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 350px;
+  gap: 30px;
+  margin: 60px 16px;
+}
+
+.mb-3 {
+  margin-bottom: 30px;
+}
+
+.project-card {
+  display: flex;
+  align-items: flex-end;
+  background-color: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-text-area {
+  background-color: white;
+  height: 222px;
+  width: 100%;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+}
+
+.card-text-area-am {
+  height: 222px;
+  width: 100%;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+}
+
+.card-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #3a4a42;
+  margin-top: 16px;
+}
+
+.tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-tag {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #3a4a42;
+  background-color: #ebf0ee;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.card-tag2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #36b37e;
+  background-color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.card-btn {
+  background-color: #36b37f;
+  border-radius: 4px;
+  margin: 20px 0;
+  padding: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.card-btn:hover {
+  background-color: #1bd185;
+}
+
+.card-btn a {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+p.paragraph {
+  padding: 20px;
+}
+
+#lenguages,
+#frameworks,
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bgcircle {
+  display: inline-flex;
+  background-color: white;
+  padding: 20px;
+  margin: 40px 0;
+  border-radius: 100%;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.title_secondary {
+  font-family: "Poppins", sans-serif;
+  color: #344563;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.aboutme-tag {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #36b37e;
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.li-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.lenguages,
+.frameworks,
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aboutme-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 60px 16px;
+}
+
+.aboutme-card {
+  display: flex;
+  background-color: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+#illustration1 {
+  display: none;
+}
+
+#illustration2 {
+  display: none;
+}
+
+@media screen and (max-width: 812px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 475px);
+  }
+
+  .wrapper2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 350px);
+  }
+
+  .aboutme-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 475px);
+    margin: 60px 16px;
+  }
+
+  .centered {
+    margin: 0;
+  }
+
+  #illustration1 {
+    display: flex;
+    position: absolute;
+    right: 0;
+    left: 81.8%;
+    top: 480%;
+  }
+
+  #illustration2 {
+    display: flex;
+    position: absolute;
+    left: -10px;
+    top: 511.5%;
+    padding: 20px 10px;
+  }
 }
