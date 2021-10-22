@@ -404,6 +404,14 @@ p.paragraph {
   border-radius: 8px;
 }
 
+#illustration1 {
+  display: none;
+}
+
+#illustration2 {
+  display: none;
+}
+
 @media screen and (max-width: 812px) {
   .wrapper {
     display: grid;
@@ -426,5 +434,21 @@ p.paragraph {
 
   .centered {
     margin: 0;
+  }
+
+  #illustration1 {
+    display: flex;
+    position: absolute;
+    right: 0;
+    left: 81.8%;
+    top: 480%;
+  }
+
+  #illustration2 {
+    display: flex;
+    position: absolute;
+    left: -10px;
+    top: 511.5%;
+    padding: 20px 10px;
   }
 }
