@@ -243,7 +243,16 @@
         </div>
       </div>
     </section>
-
+    <section class="submit">
+      <form action="https://formspree.io/f/mjvjdzwp">
+        <input type="text" id="name" name="user_name" required maxlength="30" />
+        <input type="email" id="email" name="email" required />
+        <textarea name="message" rows="10" cols="30" maxlength="500">
+          The cat was playing in the garden.</textarea
+        >
+        <button type="submit" id="submit" name="submit">Send</button>
+      </form>
+    </section>
     <!--scripts-->
     <script src="jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
