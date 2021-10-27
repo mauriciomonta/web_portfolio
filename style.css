@@ -446,10 +446,6 @@ p.paragraph {
   width: 100%;
 }
 
-.fullname input {
-  width: 50%;
-}
-
 #name {
   margin: 0 10px 12px 0;
 }
@@ -457,15 +453,19 @@ p.paragraph {
 form input {
   margin: 0 0 12px 0;
   padding: 15px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #d0d9d4;
   box-sizing: border-box;
   border-radius: 4px;
 }
 
+.fullname input {
+  width: 50%;
+}
+
 form textarea {
   font-family: "Open Sans", sans-serif;
-  background: #ffffff;
+  background: #fff;
   padding: 15px;
   border: 1px solid #60c095;
   box-sizing: border-box;
@@ -537,10 +537,6 @@ form textarea {
     align-items: center;
   }
 
-  .fullname input {
-    width: 100%;
-  }
-
   #name {
     margin: 0;
   }
@@ -564,6 +560,10 @@ form textarea {
     width: 100%;
   }
 
+  .fullname input {
+    width: 100%;
+  }
+
   form textarea {
     margin: 10px 0;
     border: 1px solid #60c095;
@@ -574,6 +574,7 @@ form textarea {
     width: 100%;
     max-width: 100%;
   }
+
   #surname {
     display: none;
   }
