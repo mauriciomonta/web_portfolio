@@ -193,7 +193,7 @@ a:hover {
   background-repeat: no-repeat;
   padding: 27px 25px;
   left: 35%;
-  top: 64.5%;
+  top: 68%;
   opacity: 70%;
 }
 
@@ -472,6 +472,26 @@ form textarea {
   border-radius: 4px;
 }
 
+#illustration_contact {
+  display: none;
+}
+
+footer .linktomail {
+  display: none;
+}
+
+footer hr {
+  margin-top: 100px;
+  height: 1px;
+  background-color: #dfe1e6;
+  border: 0;
+}
+
+footer #socialmediabtns {
+  padding-top: 0;
+  opacity: 70%;
+}
+
 @media screen and (max-width: 800px) {
   .wrapper {
     display: grid;
@@ -585,8 +605,30 @@ form textarea {
   }
 
   #illustration_contact {
+    display: flex;
     position: absolute;
     top: 775%;
     right: 0;
+  }
+
+  footer #socialmediabtns {
+    margin-top: -40px;
+    padding-top: 0;
+    opacity: 100%;
+  }
+
+  footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer hr {
+    display: none;
+  }
+
+  footer .linktomail {
+    display: flex;
   }
 }
