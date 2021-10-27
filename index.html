@@ -255,14 +255,24 @@
         method="POST"
       >
         <!--REPLACE THE LINK-->
-        <input
-          type="text"
-          id="name"
-          name="user_name"
-          required
-          maxlength="30"
-          placeholder="Full name"
-        />
+        <div class="fullname">
+          <input
+            type="text"
+            id="name"
+            name="user_name"
+            required
+            maxlength="30"
+            placeholder="Name(s)"
+          />
+          <input
+            type="text"
+            id="surname"
+            name="user_surname"
+            required
+            maxlength="30"
+            placeholder="Surname"
+          />
+        </div>
         <input
           type="email"
           id="email"
