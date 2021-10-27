@@ -578,4 +578,15 @@ form textarea {
   #surname {
     display: none;
   }
+
+  .linktomail {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  #illustration_contact {
+    position: absolute;
+    top: 775%;
+    right: 0;
+  }
 }
