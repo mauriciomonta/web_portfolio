@@ -10,3 +10,11 @@ $("#hamBtnClose").click(() => {
 $("#downbtn").click(() => {
   console.log("touched");
 });
+/*
+$("#submit").click(() => {
+  event.preventDefault();
+});
+
+$("a").click(() => {
+  event.preventDefault();
+});*/

@@ -333,6 +333,11 @@ a:hover {
   background-color: #1bd185;
 }
 
+button:focus,
+button:active {
+  background-color: #008552;
+}
+
 .card-btn a {
   color: white;
   font-weight: 400;
@@ -630,5 +635,10 @@ footer #socialmediabtns {
 
   footer .linktomail {
     display: flex;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline-color: #36b37e;
   }
 }
