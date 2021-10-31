@@ -86,10 +86,6 @@ ul.nav__links {
   color: #172b4d;
 }
 
-.centered {
-  margin: 0 600px;
-}
-
 .headline {
   display: flex;
   flex-direction: column;
@@ -382,10 +378,9 @@ header {
 #contact h3 {
   width: 50%;
   margin: 65px 0 0 20px;
-  padding: 0 135px;
-  font-size: 30px;
+  padding: 0 40px 0 140px;
+  font-size: 33px;
   line-height: 52px;
-  text-align: justify;
 }
 
 #contact form {
@@ -491,7 +486,7 @@ footer #socialmediabtns {
   top: 370%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
   header {
     position: fixed;
     display: flex;
