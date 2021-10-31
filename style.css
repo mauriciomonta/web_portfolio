@@ -464,7 +464,7 @@ footer #socialmediabtns {
 #vector7 {
   position: absolute;
   left: 0;
-  top: 250%;
+  top: 260%;
 }
 
 #vector8 {
@@ -476,19 +476,19 @@ footer #socialmediabtns {
 #vector9 {
   position: absolute;
   right: 0;
-  top: 337%;
+  top: 355%;
 }
 
 #vector11 {
   position: absolute;
   left: 350px;
-  top: 375%;
+  top: 395%;
 }
 
 #vector10 {
   position: absolute;
   left: 0;
-  top: 350%;
+  top: 370%;
 }
 
 @media screen and (max-width: 800px) {
