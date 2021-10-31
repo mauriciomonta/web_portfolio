@@ -333,9 +333,14 @@ a:hover {
   background-color: #1bd185;
 }
 
-button:focus,
-button:active {
+.card-btn:focus,
+.card-btn:active {
   background-color: #008552;
+}
+
+.card-btn p {
+  color: white;
+  margin: 0 20px;
 }
 
 .card-btn a {
