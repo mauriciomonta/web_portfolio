@@ -23,17 +23,6 @@ ul {
   list-style-type: none;
 }
 
-header {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
-  width: 100%;
-  z-index: 9999;
-  background-color: white;
-}
-
 .links {
   position: fixed;
   display: none;
@@ -283,6 +272,13 @@ a:hover {
   background-color: #008552;
 }
 
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
 .card-btn p {
   color: white;
   margin: 0 20px;
@@ -496,6 +492,17 @@ footer #socialmediabtns {
 }
 
 @media screen and (max-width: 800px) {
+  header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
+  }
+
   .wrapper {
     display: grid;
     grid-template-columns: 100%;
@@ -723,13 +730,6 @@ footer #socialmediabtns {
   #vector11 {
     display: none;
   }
-}
-
-p {
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
 }
 
 @keyframes slidein {
