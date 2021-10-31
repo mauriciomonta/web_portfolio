@@ -648,10 +648,6 @@ footer #socialmediabtns {
     outline-color: #36b37e;
   }
 
-  header {
-    display: flex;
-  }
-
   .desktoplinks {
     display: none;
   }
