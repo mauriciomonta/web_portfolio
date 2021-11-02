@@ -427,6 +427,81 @@ p.paragraph {
   display: none;
 }
 
+#contact {
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+#contact h3 {
+  width: 50%;
+  margin: 65px 0 0 20px;
+  padding: 0 135px;
+  font-size: 30px;
+  line-height: 52px;
+  text-align: justify;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 130px 0 24px;
+}
+
+.fullname {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#name {
+  margin: 0 10px 12px 0;
+}
+
+form input {
+  margin: 0 0 12px 0;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.fullname input {
+  width: 50%;
+}
+
+form textarea {
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #60c095;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+#illustration_contact {
+  display: none;
+}
+
+footer .linktomail {
+  display: none;
+}
+
+footer hr {
+  margin-top: 100px;
+  height: 1px;
+  background-color: #dfe1e6;
+  border: 0;
+}
+
+footer #socialmediabtns {
+  padding-top: 0;
+  opacity: 70%;
+}
+
 @media screen and (max-width: 800px) {
   .wrapper {
     display: grid;
@@ -570,29 +645,5 @@ p.paragraph {
   input:focus,
   textarea:focus {
     outline-color: #36b37e;
-  }
-}
-
-p {
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-}
-
-@keyframes slidein {
-  from {
-    opacity: 0%;
-    font-size: 0%;
-  }
-
-  75% {
-    opacity: 50%;
-    font-size: 110%;
-  }
-
-  to {
-    opacity: 100%;
-    font-size: 100%;
   }
 }
