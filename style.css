@@ -647,27 +647,3 @@ footer #socialmediabtns {
     outline-color: #36b37e;
   }
 }
-
-p {
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-}
-
-@keyframes slidein {
-  from {
-    opacity: 0%;
-    font-size: 0%;
-  }
-
-  75% {
-    opacity: 50%;
-    font-size: 110%;
-  }
-
-  to {
-    opacity: 100%;
-    font-size: 100%;
-  }
-}
