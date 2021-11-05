@@ -9,25 +9,24 @@ html {
 }
 
 #myBtn {
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #ececec63; /* Set a background color */
-  color: #36b37e; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 8px 17px; /* Some padding */
-  border-radius: 30px; /* Rounded corners */
-  font-size: 20px; /* Increase font size */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #ececec63;
+  color: #36b37e;
+  cursor: pointer;
+  padding: 8px 17px;
+  border-radius: 30px;
+  font-size: 20px;
   transition: all 0.5s ease-in-out;
 }
 
 #myBtn:hover {
-  background-color: #36B37E;
+  background-color: #36b37e;
   color: white;
-  ); /* Add a dark-grey background on hover */
 }
 
 a,
