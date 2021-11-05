@@ -148,7 +148,6 @@ a:hover {
 .background {
   background-image: url(img/background.png);
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
   background-size: 100%;
 }
