@@ -128,7 +128,7 @@ ul.nav__links {
 
 #gitlogo:hover {
   transform: scale(1.1);
-  transition: 500ms linear; 
+  transition: 500ms linear;
 }
 
 #socialmediabtns,
@@ -373,6 +373,11 @@ p.paragraph {
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.aboutme-card:hover {
+  transform: scale(1.05);
 }
 
 #illustration1 {
@@ -459,6 +464,29 @@ footer hr {
 footer #socialmediabtns {
   padding-top: 0;
   opacity: 70%;
+}
+
+.gitlogo:hover,
+.twlogo:hover,
+.iglogo:hover {
+  animation-name: shrink;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+}
+
+@keyframes shrink {
+  from {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(-10deg);
+  }
+  66% {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
 
 .desktoplinks ul {
