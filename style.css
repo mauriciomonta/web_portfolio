@@ -4,6 +4,32 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#myBtn {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #ececec63; /* Set a background color */
+  color: #36b37e; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 8px 17px; /* Some padding */
+  border-radius: 30px; /* Rounded corners */
+  font-size: 20px; /* Increase font size */
+  transition: all 0.5s ease-in-out;
+}
+
+#myBtn:hover {
+  background-color: #36B37E;
+  color: white;
+  ); /* Add a dark-grey background on hover */
+}
+
 a,
 button {
   font-family: "Poppins", sans-serif;
@@ -82,7 +108,7 @@ ul.nav__links {
 .paragraph {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 20px;
   color: #172b4d;
 }
 
@@ -125,11 +151,12 @@ a:hover {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  background-size: 100%;
 }
 
 .title {
   font-family: "Poppins", sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 700;
   color: #172b4d;
 }
@@ -151,11 +178,7 @@ a:hover {
 }
 
 #separator {
-  background-color: #36b37e;
-  height: 4px;
-  width: 15%;
-  border: 1px solid #36b37e;
-  border-radius: 20px;
+  display: none;
 }
 
 .wrapper {
@@ -501,6 +524,15 @@ footer #socialmediabtns {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, 350px);
+  }
+
+  #separator {
+    display: flex;
+    background-color: #36b37e;
+    height: 4px;
+    width: 15%;
+    border: 1px solid #36b37e;
+    border-radius: 20px;
   }
 
   .aboutme-wrapper {
