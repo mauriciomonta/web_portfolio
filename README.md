@@ -3,9 +3,9 @@
 # Portfolio created with HTML, CSS & JS.
 
 > This project was developed for mobile copying Figma Template #3.
-> 
-![Index](https://i.imgur.com/GtiRL1f.png)
-![NavBar](https://imgur.com/r6q0hTd.png)
+>
+> ![Index](https://i.imgur.com/GtiRL1f.png)
+> ![NavBar](https://imgur.com/r6q0hTd.png)
 
 ## Built With
 
@@ -13,15 +13,13 @@
 
 ## Live Demo
 
-[Live Demo Link](mauriciomonta.github.io/web_portfolio/)
-
+[Live Demo Link](https://mauriciomonta.github.io/web_portfolio/)
 
 ## Authors
 
 👤 **Author1**
 
 - GitHub: [@mauriciomonta](https://github.com/mauriciomonta)
-
 
 ## 🤝 Contributing
 
