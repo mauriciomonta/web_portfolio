@@ -1,16 +1,25 @@
-$("#hamBtn").click(() => {
+document.getElementById("hamBtn").onclick = function () {
   $("header").slideUp();
   $(".links").delay(1000).slideDown(1000);
-});
+};
 
-$("#hamBtnClose").click(() => {
+document.getElementById("hamBtnClose").onclick = function () {
   $(".links").slideUp(1000);
   $("header").delay(1000).slideDown(2500);
-});
+};
 
 $("#downbtn").click(() => {
   console.log("touched");
 });
+
+document.getElementById("move-menu").onclick = function () {
+  $(".links").slideUp(1000);
+  $("header").delay(1000).slideDown(2500);
+  console.log("test")
+}
+
+
+
 
 //Get the button:
 $("#myBtn").hide();
