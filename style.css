@@ -125,7 +125,7 @@ ul.nav__links {
   padding: 120px 20px 20px 20px;
 }
 
-#socialmediabtns {
+.socialmediabtns {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -138,7 +138,7 @@ ul.nav__links {
   transition: 500ms linear;
 }
 
-#socialmediabtns,
+.socialmediabtns,
 a {
   margin: 0 20px;
 }
@@ -472,7 +472,7 @@ footer hr {
   border: 0;
 }
 
-footer #socialmediabtns {
+footer .socialmediabtns {
   padding-top: 0;
   opacity: 70%;
 }
@@ -687,7 +687,7 @@ footer #socialmediabtns {
     right: 0;
   }
 
-  footer #socialmediabtns {
+  footer .socialmediabtns {
     margin-top: -40px;
     padding-top: 0;
     opacity: 100%;
