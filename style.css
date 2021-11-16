@@ -296,10 +296,6 @@ a:hover {
   background-color: #1bd185;
 }
 
-.card-btn:hover p {
-  color: rgb(41, 41, 41);
-}
-
 .card-btn:focus,
 .card-btn:active {
   background-color: #008552;

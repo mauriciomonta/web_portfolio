@@ -17,22 +17,22 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
   </head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=UA-154157330-1"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "UA-154157330-1");
-  </script>
-
   <body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-154157330-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-154157330-1");
+    </script>
+
     <!--toolbar-->
     <header id="header">
       <div id="toolbar" class="toolbar">
@@ -52,7 +52,9 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to sky">⬆</button>
+    <button type="button" onclick="topFunction()" id="myBtn" title="Go to sky">
+      ⬆
+    </button>
     <div class="background">
       <div class="desktoplinks">
         <ul>
