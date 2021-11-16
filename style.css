@@ -310,6 +310,10 @@ a:hover {
   margin: 0 20px;
 }
 
+.card-btn:hover p {
+  color: rgb(41, 41, 41);
+}
+
 .card-btn a {
   color: white;
   font-weight: 400;
