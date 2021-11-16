@@ -1,25 +1,25 @@
-/*document.getElementById("hamBtn").onclick = function () {
-  $("header").slideUp();
-  $(".links").delay(1000).slideDown(1000);
+/*document.getElementById('hamBtn').onclick = function () {
+  $('header').slideUp();
+  $('.links').delay(1000).slideDown(1000);
 };
 
-document.getElementById("hamBtnClose").onclick = function () {
-  $(".links").slideUp(1000);
-  $("header").delay(1000).slideDown(2500);
+document.getElementById('hamBtnClose').onclick = function () {
+  $('.links').slideUp(1000);
+  $('header').delay(1000).slideDown(2500);
 };
 
-$("#downbtn").click(() => {
-  console.log("touched");
+$('#downbtn').click(() => {
+  console.log('touched');
 });
 
-document.getElementById("move-menu").onclick = function () {
-  $(".links").slideUp(1000);
-  $("header").delay(1000).slideDown(2500);
-  console.log("test")
+document.getElementById('move-menu').onclick = function () {
+  $('.links').slideUp(1000);
+  $('header').delay(1000).slideDown(2500);
+  console.log('test')
 }
 
 //Get the button:
-$("#myBtn").hide();
+$('#myBtn').hide();
 */
 // When the user scrolls down 20px from the top of the document, show the button
 
@@ -30,9 +30,9 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    $("#myBtn").fadeIn();
+    $('#myBtn').fadeIn();
   } else {
-    $("#myBtn").fadeOut();
+    $('#myBtn').fadeOut();
   }
 }
 
@@ -43,11 +43,11 @@ function topFunction() {
 }
 */
 /*
-$("#submit").click(() => {
+$('#submit').click(() => {
   event.preventDefault();
 });
 
-$("a").click(() => {
+$('a').click(() => {
   event.preventDefault();
 });*/
 
