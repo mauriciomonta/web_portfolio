@@ -1,4 +1,4 @@
-document.getElementById("hamBtn").onclick = function () {
+/*document.getElementById("hamBtn").onclick = function () {
   $("header").slideUp();
   $(".links").delay(1000).slideDown(1000);
 };
@@ -18,13 +18,12 @@ document.getElementById("move-menu").onclick = function () {
   console.log("test")
 }
 
-
-
-
 //Get the button:
 $("#myBtn").hide();
-
+*/
 // When the user scrolls down 20px from the top of the document, show the button
+
+/*
 window.onscroll = function () {
   scrollFunction();
 };
@@ -42,7 +41,7 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
+*/
 /*
 $("#submit").click(() => {
   event.preventDefault();
@@ -52,6 +51,14 @@ $("a").click(() => {
   event.preventDefault();
 });*/
 
-document.getElementById("hamBtn").onclick = function () {
-  console.log("working");
-};
+document.getElementById("hamBtn").addEventListener("click", () => {
+  document.getElementById("links").classList.add("link-show");
+});
+
+document.getElementById("hamBtnClose").addEventListener("click", () => {
+  document.getElementById("links").classList.remove("link-show");
+});
+
+document.getElementById("mobile-menu").addEventListener("click", () => {
+  document.getElementById("links").classList.remove("link-show");
+});

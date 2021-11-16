@@ -56,7 +56,14 @@ ul {
   border-radius: 0 0 15px 15px;
   width: 100%;
   background-color: white;
+  opacity: 0%;
   z-index: 9999;
+  transition: all 0.4s ease-in-out;
+}
+
+.link-show {
+  display: block;
+  opacity: 100%;
 }
 
 .nav__links {
@@ -292,7 +299,6 @@ a:hover {
 .card-btn:hover p {
   color: rgb(41, 41, 41);
 }
-
 
 .card-btn:focus,
 .card-btn:active {
