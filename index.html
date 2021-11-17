@@ -17,24 +17,24 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
   </head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=UA-154157330-1"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "UA-154157330-1");
-  </script>
-
   <body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-154157330-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-154157330-1");
+    </script>
+
     <!--toolbar-->
-    <header>
+    <header id="header">
       <div id="toolbar" class="toolbar">
         <h2 id="toolbartitle">Welcome</h2>
       </div>
@@ -44,15 +44,17 @@
         </button>
       </nav>
     </header>
-    <div class="links">
+    <div class="links" id="links">
       <button type="button" id="hamBtnClose">X</button>
-      <ul class="nav__links">
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul class="nav__links" id="mobile-menu">
+        <li><a href="#portfoliosection">Portfolio</a></li>
+        <li><a href="#aboutmesection">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to sky">⬆</button>
+    <button type="button" onclick="topFunction()" id="myBtn" title="Go to sky">
+      ⬆
+    </button>
     <div class="background">
       <div class="desktoplinks">
         <ul>
@@ -83,7 +85,7 @@
         </div>
         <div id="vector2"></div>
         <div id="vector6"></div>
-        <div id="socialmediabtns">
+        <div class="socialmediabtns">
           <a href="#"
             ><img
               class="gitlogo"
@@ -132,9 +134,7 @@
               <li class="card-tag">HTML</li>
               <li class="card-tag">CSS</li>
             </ul>
-            <button type="button" class="card-btn">
-              <p href="#">See project</p>
-            </button>
+            <button type="button" class="card-btn">See project</button>
           </div>
         </div>
 
@@ -147,9 +147,7 @@
               <li class="card-tag">HTML</li>
               <li class="card-tag">CSS</li>
             </ul>
-            <button type="button" class="card-btn">
-              <p href="#">See project</p>
-            </button>
+            <button type="button" class="card-btn">See project</button>
           </div>
         </div>
 
@@ -162,9 +160,7 @@
               <li class="card-tag">HTML</li>
               <li class="card-tag">CSS</li>
             </ul>
-            <button type="button" class="card-btn">
-              <p href="#">See project</p>
-            </button>
+            <button type="button" class="card-btn">See project</button>
           </div>
         </div>
 
@@ -177,9 +173,7 @@
               <li class="card-tag">HTML</li>
               <li class="card-tag">CSS</li>
             </ul>
-            <button type="button" class="card-btn">
-              <p href="#">See project</p>
-            </button>
+            <button type="button" class="card-btn">See project</button>
           </div>
         </div>
 
@@ -192,9 +186,7 @@
               <li class="card-tag">HTML</li>
               <li class="card-tag">CSS</li>
             </ul>
-            <button type="button" class="card-btn">
-              <p href="#">See project</p>
-            </button>
+            <button type="button" class="card-btn">See project</button>
           </div>
         </div>
 
@@ -207,9 +199,7 @@
               <li class="card-tag">HTML</li>
               <li class="card-tag">CSS</li>
             </ul>
-            <button type="button" class="card-btn">
-              <p href="#">See project</p>
-            </button>
+            <button type="button" class="card-btn">See project</button>
           </div>
         </div>
       </div>
@@ -228,9 +218,7 @@
 
       <img id="vector7" src="img/vector7.svg" height="100" alt="vector7" />
       <img id="vector8" src="img/vector8.svg" alt="vector8" />
-      <button type="button" class="card-btn">
-        <p href="#">Get my resume</p>
-      </button>
+      <button type="button" class="card-btn">Get my resume</button>
       <img id="illustration2" src="img/illustration2.svg" alt="illustration2" />
       <div class="wrapper2">
         <div class="aboutme-card">
@@ -339,7 +327,7 @@
     </section>
     <footer>
       <hr />
-      <div id="socialmediabtns">
+      <div class="socialmediabtns">
         <a href="#"
           ><img
             class="gitlogo"
@@ -373,7 +361,6 @@
       >
     </footer>
     <!--scripts-->
-    <script src="jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
     <!--scripts-->
   </body>
