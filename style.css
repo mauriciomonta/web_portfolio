@@ -308,10 +308,6 @@ a:hover {
   margin: 0 20px;
 }
 
-.card-btn:hover p {
-  color: rgb(41, 41, 41);
-}
-
 .card-btn a {
   color: white;
   font-weight: 400;
@@ -548,7 +544,8 @@ footer .socialmediabtns {
   left: 0;
   top: 350%;
 }
-/*POP UP WINDOWS STYLE*/
+/* POP UP WINDOWS STYLE */
+
 .popup-visible {
   visibility: visible !important;
 }
@@ -635,7 +632,7 @@ footer .socialmediabtns {
 
 .popup-button:hover {
   background-color: #1bd185;
-  box-shadow: 0px 0px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 0 16px rgba(54, 179, 127, 0.24);
 }
 
 .popup-tags {
@@ -654,6 +651,10 @@ footer .socialmediabtns {
   cursor: pointer;
 }
 
+.card-btn:hover p {
+  color: rgb(41, 41, 41);
+}
+
 .popup-paragraph {
   margin-top: 36px;
   font-family: "Poppins", sans-serif;
@@ -665,7 +666,8 @@ footer .socialmediabtns {
 .popup-buttons i {
   margin-left: 10px;
 }
-/*POP UP WINDOWS STYLE*/
+
+/* POP UP WINDOWS STYLE */
 
 @media screen and (max-width: 992px) {
   header {
