@@ -12,14 +12,14 @@ document.getElementById('mobile-menu').addEventListener('click', () => {
 
 document.getElementById('project-1').addEventListener('click', () => {
   document.getElementById('modal-popup').classList.add('popup-visible');
-  setTimeout(function () {
+  setTimeout(() => {
     document.getElementById('modal-popup').classList.add('popup-transparency');
   }, 300);
 });
 
 document.getElementById('close-popup').addEventListener('click', () => {
   document.getElementById('modal-popup').classList.remove('popup-transparency');
-  setTimeout(function () {
+  setTimeout(() => {
     document.getElementById('modal-popup').classList.remove('popup-visible');
   }, 300);
 });
