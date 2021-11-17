@@ -947,7 +947,7 @@ footer .socialmediabtns {
   }
 
   .close {
-    color: #ffffff;
+    color: #fff;
     background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     right: 35px;
@@ -956,11 +956,13 @@ footer .socialmediabtns {
     padding: 2px 7px;
     border-radius: 3px;
   }
+
   .content-popup img {
     width: 311px;
     margin-top: 0;
     margin-left: -7px;
   }
+
   .popup-transparency {
     opacity: 100%;
   }
@@ -968,6 +970,7 @@ footer .socialmediabtns {
   .modal-popup-content {
     display: flex;
   }
+
   .title-and-buttons {
     display: flex;
     flex-direction: row;
