@@ -63,35 +63,41 @@ document.getElementById('close-popup').addEventListener('click', () => {
 
 const mailInput = document.getElementById('email');
 
-let canSubmit = Boolean;
-
-function checkMail() {
-  if (
-    mailInput.value === mailInput.value.toUpperCase() 
-    || mailInput.value.length < 15 
-    || !mailInput.value.includes('@')
-  ) {
-    const input = document.getElementById('correo');
-    const error = document.createElement('p');
-    error.textContent = 'The email address should be real and  in lowercase.';
-    input.appendChild(error);
-    document.getElementById('email').classList.add('error-input');
-    setTimeout(() => {
-      input.removeChild(error);
-      document.getElementById('email').classList.remove('error-input');
-    }, 5000);
-    canSubmit = false;
-  } else {
-    canSubmit = true;
+document.getElementById('submit').addEventListener('click', ()=>{
+  let canSubmit = Boolean;
+  
+  function checkMail() {
+    if (
+      mailInput.value === mailInput.value.toUpperCase() 
+      || mailInput.value.length < 15 
+      || !mailInput.value.includes('@')
+    ) {
+      const input = document.getElementById('correo');
+      const error = document.createElement('p');
+      error.textContent = 'The email address should be real and  in lowercase.';
+      input.appendChild(error);
+      document.getElementById('email').classList.add('error-input');
+      setTimeout(() => {
+        input.removeChild(error);
+        document.getElementById('email').classList.remove('error-input');
+      }, 5000);
+      canSubmit = false;
+    } else {
+      canSubmit = true;
+    }
+    return canSubmit;
   }
-  return canSubmit;
-}
-
-function validate() {
-  checkMail();
-
-  if (canSubmit === false) {
-    event.preventDefault();
+  
+  function validate() {
+    checkMail();
+  
+    if (canSubmit === false) {
+      event.preventDefault();
+    }
   }
-}
+
+  validate();
+  
+})
+
 /* CONTACT FORM VALIDATION */
