@@ -68,10 +68,10 @@ document.getElementById('submit').addEventListener('click', (event) => {
 
   function checkMail() {
     if (
-      mailInput.value === mailInput.value.toUpperCase()
-      || mailInput.value.length < 15
-      || !mailInput.value.includes('@')
+      mailInput.value === mailInput.value.toLowerCase()
     ) {
+      canSubmit = true;
+    } else {
       const input = document.getElementById('correo');
       const error = document.createElement('p');
       error.textContent = 'The email address should be real and  in lowercase.';
@@ -82,8 +82,6 @@ document.getElementById('submit').addEventListener('click', (event) => {
         document.getElementById('email').classList.remove('error-input');
       }, 5000);
       canSubmit = false;
-    } else {
-      canSubmit = true;
     }
     return canSubmit;
   }
