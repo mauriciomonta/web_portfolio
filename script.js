@@ -58,3 +58,43 @@ document.getElementById('close-popup').addEventListener('click', () => {
     document.getElementById('modal-popup').classList.remove('popup-visible');
   }, 300);
 });
+
+/* CONTACT FORM VALIDATION */
+
+const mailInput = document.getElementById('email');
+
+document.getElementById('submit').addEventListener('click', (event) => {
+  let canSubmit = Boolean;
+
+  function checkMail() {
+    if (
+      mailInput.value === mailInput.value.toLowerCase()
+    ) {
+      canSubmit = true;
+    } else {
+      const input = document.getElementById('correo');
+      const error = document.createElement('p');
+      error.textContent = 'The email address should be real and  in lowercase.';
+      input.appendChild(error);
+      document.getElementById('email').classList.add('error-input');
+      setTimeout(() => {
+        input.removeChild(error);
+        document.getElementById('email').classList.remove('error-input');
+      }, 5000);
+      canSubmit = false;
+    }
+    return canSubmit;
+  }
+
+  function validate() {
+    checkMail();
+
+    if (canSubmit === false) {
+      event.preventDefault();
+    }
+  }
+
+  validate();
+});
+
+/* CONTACT FORM VALIDATION */

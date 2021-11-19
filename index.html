@@ -338,6 +338,7 @@
         chat please get in touch.
       </h3>
       <form
+        id="form"
         class="contactform"
         action="https://formspree.io/f/xleakvjk"
         method="POST"
@@ -360,20 +361,27 @@
             placeholder="Surname"
           />
         </div>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          placeholder="Email address"
-        />
+        <div id="correo">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Email address"
+          />
+        </div>
         <textarea
+          id="message-area"
           name="message"
           rows="10"
           cols="30"
           maxlength="500"
           placeholder="Enter text here"
+          required
         ></textarea>
+        <p class="hidden">
+          If you don't write me a message i don't know what you want :(
+        </p>
         <button
           class="card-btn btnsubmit"
           type="submit"
