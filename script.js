@@ -63,18 +63,13 @@ document.getElementById('close-popup').addEventListener('click', () => {
 
 const mailInput = document.getElementById('email');
 
-/* const nameInput = document.getElementById('name');
-const surnameInput = document.getElementById('surname');
-const messageInput = document.getElementById('message-area');
-*/
-
 let canSubmit = Boolean;
 
 function checkMail() {
   if (
-    mailInput.value === mailInput.value.toUpperCase() ||
-    mailInput.value.length < 15 ||
-    !mailInput.value.includes('@')
+    mailInput.value === mailInput.value.toUpperCase() 
+    || mailInput.value.length < 15 
+    || !mailInput.value.includes('@')
   ) {
     const input = document.getElementById('correo');
     const error = document.createElement('p');
