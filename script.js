@@ -63,13 +63,13 @@ document.getElementById('close-popup').addEventListener('click', () => {
 
 const mailInput = document.getElementById('email');
 
-document.getElementById('submit').addEventListener('click', ()=>{
+document.getElementById('submit').addEventListener('click', () => {
   let canSubmit = Boolean;
-  
+
   function checkMail() {
     if (
-      mailInput.value === mailInput.value.toUpperCase() 
-      || mailInput.value.length < 15 
+      mailInput.value === mailInput.value.toUpperCase()
+      || mailInput.value.length < 15
       || !mailInput.value.includes('@')
     ) {
       const input = document.getElementById('correo');
@@ -87,17 +87,15 @@ document.getElementById('submit').addEventListener('click', ()=>{
     }
     return canSubmit;
   }
-  
+
   function validate() {
     checkMail();
-  
+
     if (canSubmit === false) {
       event.preventDefault();
     }
   }
-
   validate();
-  
-})
+});
 
 /* CONTACT FORM VALIDATION */
