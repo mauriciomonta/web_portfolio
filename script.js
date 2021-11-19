@@ -63,7 +63,7 @@ document.getElementById('close-popup').addEventListener('click', () => {
 
 const mailInput = document.getElementById('email');
 
-document.getElementById('submit').addEventListener('click', () => {
+document.getElementById('submit').addEventListener('click', (event) => {
   let canSubmit = Boolean;
 
   function checkMail() {
@@ -92,7 +92,7 @@ document.getElementById('submit').addEventListener('click', () => {
     checkMail();
 
     if (canSubmit === false) {
-      e.preventDefault();
+      event.preventDefault();
     }
   }
   validate();
