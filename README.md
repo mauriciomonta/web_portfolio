@@ -17,7 +17,7 @@
 
 ## Authors
 
-👤 **Author1**
+👨🏻‍💻 **Mauricio**
 
 - GitHub: [@mauriciomonta](https://github.com/mauriciomonta)
 
