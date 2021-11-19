@@ -92,7 +92,7 @@ document.getElementById('submit').addEventListener('click', () => {
     checkMail();
 
     if (canSubmit === false) {
-      preventDefault();
+      e.preventDefault();
     }
   }
   validate();
