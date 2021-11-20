@@ -100,44 +100,6 @@ document.getElementById('submit').addEventListener('click', (event) => {
 /* CONTACT FORM VALIDATION */
 
 /* .LOCALSTORAGE */
-/* const existData = Boolean; */
-/* let data = {};
-document.getElementById('form').addEventListener('keyup', () => {
-  const nameval = document.getElementById('name').value;
-  const surnameval = document.getElementById('surname').value;
-  const emailval = document.getElementById('email').value;
-  const messageval = document.getElementById('message-area').value;
-  data = {
-    name: nameval, surname: surnameval, email: emailval, message: messageval,
-  };
-  const storeData = JSON.stringify(data);
-  localStorage.setItem('data', storeData);
-  console.log(storeData);
-  /*   existData = true;
-  console.log(existData); */
-
-/*  if (nameval.length === 0
-    && surnameval.length === 0
-    && emailval.length === 0
-    && messageval.length === 0
-  ) {
-    localStorage.removeItem('data');
-    console.log('fields empty');
-  } else {
-    console.log('fields has content');
-  }
-  return storeData;
-})
-window.onload = function recover() {
-  if ('data' in localStorage) {
-    const pito = localStorage.getItem('data');
-    JSON.parse(pito);
-    console.log(pito, '-- has data');
-    nameval = pito.name;
-  }
-};
-
-/* .LOCALSTORAGE */
 
 const formName = document.getElementById('name');
 const formSurname = document.getElementById('surname');
@@ -158,5 +120,24 @@ formName.addEventListener('keyup', saveObjData);
 formSurname.addEventListener('keyup', saveObjData);
 formEmail.addEventListener('keyup', saveObjData);
 formMessage.addEventListener('keyup', saveObjData);
+
+function recoverData() {
+  const data = JSON.parse(localStorage.getItem('data'));
+  if (data.name.length !== 0) {
+    formName.value = data.name;
+  } if (data.surname.length !== 0) {
+    formSurname.value = data.surname;
+  } if (data.email.length !== 0) {
+    formEmail.value = data.email;
+  } if (data.message.length !== 0) {
+    formMessage.value = data.message;
+  }
+}
+
+window.addEventListener('load', () => {
+  if ('data' in localStorage) {
+    recoverData();
+  }
+});
 
 /* .LOCALSTORAGE */
