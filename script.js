@@ -98,3 +98,52 @@ document.getElementById('submit').addEventListener('click', (event) => {
 });
 
 /* CONTACT FORM VALIDATION */
+
+/* .LOCALSTORAGE */
+
+const formName = document.getElementById('name');
+const formSurname = document.getElementById('surname');
+const formEmail = document.getElementById('email');
+const formMessage = document.getElementById('message-area');
+
+const saveObjData = () => {
+  const formValues = {
+    name: formName.value,
+    surname: formSurname.value,
+    email: formEmail.value,
+    message: formMessage.value,
+  };
+  localStorage.setItem('data', JSON.stringify(formValues));
+  if (formName.value.length === 0
+    && formSurname.value.length === 0
+    && formEmail.value.length === 0
+    && formMessage.value.length === 0) {
+    localStorage.removeItem('data');
+  }
+};
+
+formName.addEventListener('keyup', saveObjData);
+formSurname.addEventListener('keyup', saveObjData);
+formEmail.addEventListener('keyup', saveObjData);
+formMessage.addEventListener('keyup', saveObjData);
+
+function recoverData() {
+  const data = JSON.parse(localStorage.getItem('data'));
+  if (data.name.length !== 0) {
+    formName.value = data.name;
+  } if (data.surname.length !== 0) {
+    formSurname.value = data.surname;
+  } if (data.email.length !== 0) {
+    formEmail.value = data.email;
+  } if (data.message.length !== 0) {
+    formMessage.value = data.message;
+  }
+}
+
+window.addEventListener('load', () => {
+  if ('data' in localStorage) {
+    recoverData();
+  }
+});
+
+/* .LOCALSTORAGE */
