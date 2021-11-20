@@ -114,6 +114,12 @@ const saveObjData = () => {
     message: formMessage.value,
   };
   localStorage.setItem('data', JSON.stringify(formValues));
+  if (formName.value.length === 0
+    && formSurname.value.length === 0
+    && formEmail.value.length === 0
+    && formMessage.value.length === 0) {
+    localStorage.removeItem('data');
+  }
 };
 
 formName.addEventListener('keyup', saveObjData);
