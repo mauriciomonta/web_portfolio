@@ -98,3 +98,65 @@ document.getElementById('submit').addEventListener('click', (event) => {
 });
 
 /* CONTACT FORM VALIDATION */
+
+/* .LOCALSTORAGE */
+/* const existData = Boolean; */
+/* let data = {};
+document.getElementById('form').addEventListener('keyup', () => {
+  const nameval = document.getElementById('name').value;
+  const surnameval = document.getElementById('surname').value;
+  const emailval = document.getElementById('email').value;
+  const messageval = document.getElementById('message-area').value;
+  data = {
+    name: nameval, surname: surnameval, email: emailval, message: messageval,
+  };
+  const storeData = JSON.stringify(data);
+  localStorage.setItem('data', storeData);
+  console.log(storeData);
+  /*   existData = true;
+  console.log(existData); */
+
+/*  if (nameval.length === 0
+    && surnameval.length === 0
+    && emailval.length === 0
+    && messageval.length === 0
+  ) {
+    localStorage.removeItem('data');
+    console.log('fields empty');
+  } else {
+    console.log('fields has content');
+  }
+  return storeData;
+})
+window.onload = function recover() {
+  if ('data' in localStorage) {
+    const pito = localStorage.getItem('data');
+    JSON.parse(pito);
+    console.log(pito, '-- has data');
+    nameval = pito.name;
+  }
+};
+
+/* .LOCALSTORAGE */
+
+const formName = document.getElementById('name');
+const formSurname = document.getElementById('surname');
+const formEmail = document.getElementById('email');
+const formMessage = document.getElementById('message-area');
+
+const saveObjData = () => {
+  const formValues = {
+    name: formName.value,
+    surname: formSurname.value,
+    email: formEmail.value,
+    message: formMessage.value,
+  };
+  localStorage.setItem('data', JSON.stringify(formValues));
+};
+
+formName.addEventListener('keyup', saveObjData);
+formSurname.addEventListener('keyup', saveObjData);
+formEmail.addEventListener('keyup', saveObjData);
+formMessage.addEventListener('keyup', saveObjData);
+
+/* .LOCALSTORAGE */
