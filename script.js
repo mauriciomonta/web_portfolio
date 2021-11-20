@@ -68,7 +68,7 @@ document.getElementById('submit').addEventListener('click', (event) => {
 
   function checkMail() {
     if (
-      mailInput.value === mailInput.value.toLowerCase()
+      mailInput.value !== mailInput.value.toLowerCase()
     ) {
       canSubmit = true;
     } else {
@@ -108,9 +108,9 @@ const formMessage = document.getElementById('message-area');
 
 const saveObjData = () => {
   const formValues = {
-    name: formName.value,
+    name: formName,
     surname: formSurname.value,
-    email: formEmail.value,
+    email: formEmail,
     message: formMessage.value,
   };
   localStorage.setItem('data', JSON.stringify(formValues));
@@ -142,7 +142,7 @@ function recoverData() {
 
 window.addEventListener('load', () => {
   if ('data' in localStorage) {
-    recoverData();
+    /* recoverData(); */
   }
 });
 
