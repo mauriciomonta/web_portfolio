@@ -1,19 +1,19 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio created with HTML, CSS & JS.
+# 👨🏻‍💻 Personal portfolio.
 
-> This project was developed for mobile copying Figma Template #3.
+> This project was developed for mobile and desktop copying [Figma template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=1%3A468).
 >
 > ![Index](https://i.imgur.com/GtiRL1f.png)
 > ![NavBar](https://imgur.com/r6q0hTd.png)
 
 ## Built With
 
-- HTML, CSS & jQuery.
+- HTML, CSS & Javascript.
 
 ## Live Demo
 
-[Live Demo Link](https://mauriciomonta.github.io/web_portfolio/)
+[Take a look 👀](https://mauriciomonta.github.io/web_portfolio/)
 
 ## Authors
 
@@ -21,21 +21,9 @@
 
 - GitHub: [@mauriciomonta](https://github.com/mauriciomonta)
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
+## Show me your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
